@@ -199,6 +199,7 @@ let load = async() => {
       }
 
   } else {
+      console.log("LOCAL STORAGE");
       loadExternalTable(monitoreo_inundaciones);
   }
 }

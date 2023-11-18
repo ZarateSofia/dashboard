@@ -51,4 +51,12 @@ th{
     color: white;
 }
 
+.titulo{
+    padding: 10px; /* Agrega un espacio alrededor del texto */
+    text-align: center; /* Centra el texto */
+    background-color: #001e6b;
+}
 
+.card-title{
+    color: white;
+}

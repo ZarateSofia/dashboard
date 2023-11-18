@@ -9,7 +9,7 @@
 
         <title>Dashboard</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-
+        <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300&family=Poppins:wght@300&family=Varela+Round&display=swap" rel="stylesheet">
         <!-- Font Awesome -->
         <link
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -28,7 +28,7 @@
 
         <header>
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <nav class="navbar navbar-expand-lg navbar-light bgColor">
                 <div class="container-fluid">
                     <button
                         class="navbar-toggler"
@@ -51,6 +51,10 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#datos">Datos</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mapa">Mapa de monitoreo</a>
+                            </li>
+
 
                         </ul>
                     </div>
@@ -161,9 +165,8 @@
                                 <h5 class="card-title">Pronóstico del tiempo
                                     para 5 días con datos cada 3 horas por
                                     ciudad</h5>
-                                <table id="forecast"
-                                    class="table align-middle mb-0 bg-white">
-                                    <thead class="bg-light">
+                                <table id="forecast" class="table align-middle mb-0 table-bordered bg-white table-hover">
+                                    <thead class="bgColor">
                                         <tr>
                                             <th>Hora</th>
                                             <th>Humedad [%]</th>
@@ -186,7 +189,7 @@
 
          <!-- Tabla de mareas -->
         <section class="p-4 text-right bg-light">
-            <h4 class="mb-3">
+            <h4 id="mapa" class="mb-3">
                 Mapa de monitoreo de amenaza de inundaciones bajo pronóstico de precipitaciones
             </h4>
             <div class="container">

@@ -2,6 +2,57 @@ table.default tr:not(:nth-child(1)):not(:nth-child(2)) {
     display: none;
 }
 
-h4{
-    color: purple;
+table.default tr td:first-child img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+table.default {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table.default td, table.default th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th.default{
+    background-color: #001e6b;
+}
+
+* {
+    font-family: 'Hind Vadodara', sans-serif;
+}
+
+.bgColor{
+    background-color: #001e6b;
+}
+
+h5 {
+    font-family: 'Poppins', serif;
+    color:  #0e1f4a;
+}
+
+h4 {
+    font-family: 'Varela Round', sans-serif;
+    color: #070f3a;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+  
+.navbar a:hover {
+    font-weight: bold;
+    color: white;
+}
+
+th{
+    color: white;
+}
+
+

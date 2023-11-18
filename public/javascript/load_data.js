@@ -56,30 +56,19 @@ let cargarOpenMeteo = () => {
             {
               label: 'Temperature máxima',
               data: dataMax,
-              borderColor: 'rgba(75, 192, 192, 1)', 
-              backgroundColor: 'rgba(75, 192, 192, 0.5)', // Color de fondo
-              borderWidth: 3 // Ancho de la línea
+              borderColor: 'rgba(11, 49, 131, 1)', 
+              backgroundColor: 'rgba(11, 49, 131, 0.5)', 
+              borderWidth: 3 
             },
             {
               label: 'Temperature mínma',
               data: dataMin,
-              borderColor: 'rgba(127, 255, 212, 1)', 
-              backgroundColor: 'rgba(127, 255, 212, 0.5)', // Color de fondo
-              borderWidth: 3 // Ancho de la línea
+              borderColor: 'rgba(45, 108, 203, 1)', 
+              backgroundColor: 'rgba(45, 108, 203, 0.5)',
+              borderWidth: 3 
             }
           ]
-        },
-        options: {
-          interaction: {
-              mode: 'index',
-              intersect: false,
-          },
-          plugins: {
-              tooltip: {
-                  mode: 'index',
-                  intersect: false,
-              }
-          }
+        
         }
       };
       let chart1  = new Chart(plotRef, config);
@@ -95,9 +84,11 @@ let cargarOpenMeteo = () => {
             {
               label: 'sunshine_duration',
               data: dataSun,
-              borderColor: 'rgba(255, 99, 132, 1)', 
-              backgroundColor: 'rgba(255, 99, 132, 0.2)', 
-              borderWidth:3
+              borderColor: 'rgba(34, 88, 179, 1)', 
+              backgroundColor: 'rgba(34, 88, 179, 0.5)', 
+              borderWidth:3,
+              fill:true,
+              tension:0.5
             }
           ]
         }

@@ -181,7 +181,6 @@ let load = async() => {
         let endpoint=proxy+URL;
         const resultado = await fetch(endpoint);
         const dataXML = await resultado.text();
-        console.log("tengo permiso");
         loadExternalTable(dataXML);
         localStorage.setItem('monitoreo_inundaciones', dataXML);
 
@@ -190,7 +189,6 @@ let load = async() => {
       }
 
   } else {
-      console.log("LOCAL STORAGE");
       loadExternalTable(monitoreo_inundaciones);
   }
 }
